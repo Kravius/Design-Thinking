@@ -1,2 +1,1 @@
-# Design-Thinking
-develop
+# friday-live-coding

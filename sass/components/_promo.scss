@@ -1,0 +1,40 @@
+.promo {}
+
+.promo__wrapper {
+    display: flex;
+    padding: 30px 0 112px; // изменить на 30 0
+    justify-content: center;
+    background-color: $tablet-width;
+
+}
+
+.promo__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 65px;
+}
+
+.promo__text {
+    margin: 30px auto 45px;
+}
+
+.promo__buttons {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.button {}
+
+.button_colored {}
+
+.link-button {}
+
+.ico {}
+
+.ico_play {}
+
+.link-button__text {}
+
+.promo__image {}

@@ -1,0 +1,48 @@
+.header {
+    background: $color-light;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px 0 17px 0;
+}
+
+.wrapper {}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+.header__navigation {}
+
+.navigation {
+    display: flex;
+    gap: 17px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.navigation__link {
+    cursor: pointer;
+    color: $color-heading;
+    font-family: Open Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.header__buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.button {}
+
+.button_bordered {}
+
+.button_colored {}
