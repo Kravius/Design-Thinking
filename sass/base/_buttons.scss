@@ -10,25 +10,42 @@
     line-height: 2.2rem;
     cursor: pointer;
     transition: all .3s;
-}
 
-.button_bordered {
-    background: $color-light;
-    border: 1px solid $color-text;
+    &_bordered {
+        background: $color-light;
+        border: 1px solid $color-text;
 
-    &:hover {
-        background: $color-hovered;
-        border-color: $color-hovered;
+        &:hover {
+            background: $color-hovered;
+            border-color: $color-hovered;
+        }
+    }
+
+    &_colored {
+        background: $color-primary;
+        color: $color-light;
+        border-color: $color-primary;
+
+        &:hover {
+            background: $color-additional;
+            border-color: $color-additional;
+        }
     }
 }
 
-.button_colored {
-    background: $color-primary;
-    color: $color-light;
-    border-color: $color-primary;
+.link-button {
+    color:  $color-additional;
+    @extend %font-add;
+    @include font($size: 1.6rem, $weight: 600, $height: normal);
 
-    &:hover {
-        background: $color-additional;
-        border-color: $color-additional;
-    }
+text-decoration-line: underline;
+}
+
+.link-button__text {
+	margin-left: 9px;
+}
+
+.link-button {
+	display: inline-flex;
+	align-items: center;
 }

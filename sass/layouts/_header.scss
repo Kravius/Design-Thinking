@@ -19,22 +19,7 @@
 
 .header__navigation {}
 
-.navigation {
-    display: flex;
-    gap: 17px;
-    list-style-type: none;
-    align-items: center;
-}
 
-.navigation__link {
-    cursor: pointer;
-    color: $color-heading;
-    font-family: Open Sans;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 2.8rem;
-}
 
 .header__buttons {
     display: flex;
