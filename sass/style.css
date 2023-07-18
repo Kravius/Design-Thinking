@@ -2,7 +2,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-body {
+.strategies__title, .tag, body {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
@@ -54,6 +54,11 @@ h5 {
   font-style: normal;
   font-weight: bold;
   line-height: 2.6rem;
+}
+
+.block-shadowed {
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 
 .button {
@@ -554,6 +559,55 @@ section, main, footer, header, article {
   height: 17px;
 }
 
+.ico_snake {
+  background-image: url("../../img/icons/snake.svg");
+  width: 18px;
+  height: 14px;
+}
+
+.ico_heart {
+  background-image: url("../../img/icons/heart.svg");
+  width: 17px;
+  height: 15px;
+}
+
+.ico_clock {
+  background-image: url("../../img/icons/clock.svg");
+  width: 15px;
+  height: 17px;
+}
+
+.strategies__tags {
+  margin: 0 0 31px;
+}
+
+.tags {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.tag {
+  padding: 0 14px;
+  border-radius: 90px;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: #544837;
+}
+.tag_selected {
+  background: #FF9900;
+  color: #ffffff;
+  border-color: #FF9900;
+}
+.tag_bordered {
+  border: 1px solid #D7D7D7;
+}
+.tag_colored {
+  background-color: #F5F5F5;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
@@ -623,15 +677,38 @@ section, main, footer, header, article {
   flex-wrap: wrap;
 }
 .layout-2-column > * {
-  flex-basis: 45%;
+  flex-basis: 48%;
 }
 
 .contact-us {
   background: #FFEEE1;
+  padding: 62px 0 82px;
 }
 
-.mysection {
-  background-color: #F03E3D;
+.contact-us__line {
+  margin-bottom: 19px;
+}
+
+.contact-us__form input,
+.contact-us__form textarea {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 10px 21px;
+}
+.contact-us__form input:focus,
+.contact-us__form textarea:focus {
+  border-color: #FF9900;
+  outline: none;
+}
+.contact-us__form textarea {
+  resize: none;
+  width: 100%;
+  height: 160px;
+}
+
+.contact-us__button > * {
+  min-width: 117px;
 }
 
 .promo {
@@ -703,4 +780,37 @@ section, main, footer, header, article {
 
 .tool__title {
   margin: 0 0 16px;
+}
+
+.strategies {
+  padding: 30px 0;
+}
+
+.strategies__title {
+  color: #2F281E;
+  margin: 0 0 14px;
+  font-size: 3.4rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.strategies__description {
+  margin: 0 0 24px;
+}
+
+.strategy-wrapper > * {
+  margin-bottom: 30px;
+}
+
+.strategy__content {
+  padding: 24px 34px 26px;
+}
+
+.strategy__name {
+  margin-bottom: 29px;
+}
+
+.about-us {
+  padding-top: 66px;
 }/*# sourceMappingURL=style.css.map */

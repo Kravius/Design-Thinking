@@ -1,0 +1,41 @@
+.strategies {
+	padding: 30px 0;
+}
+.wrapper {
+}
+.strategies__title {
+	color: $color-heading;
+	margin: 0 0 14px;
+	@extend %font-prim;
+	@include font ($size: 3.4rem, $height: normal)
+}
+.strategies__description {
+	margin: 0 0 24px;
+}
+
+.strategy-wrapper {
+	>* {
+		margin-bottom: 30px;
+	}
+}
+
+.strategy__content {
+	padding: 24px 34px 26px;
+}
+
+.layout-3-column {
+}
+.strategy {
+}
+
+.strategy__image {
+}
+.strategy__name {
+	margin-bottom: 29px;
+}
+.strategy__tags {
+}
+.tag_colored {
+}
+.strategy_wide {
+}
