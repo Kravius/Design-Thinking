@@ -57,3 +57,13 @@
 	width: 15px;
 	height: 17px;
 }
+
+.ico_circle {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	background-color: $color-light;
+	border-radius: 50px;
+}
