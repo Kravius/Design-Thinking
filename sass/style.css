@@ -718,6 +718,10 @@ section, main, footer, header, article {
   height: 160px;
 }
 
+.contact-us__text {
+  max-width: 520px;
+}
+
 .contact-us__content {
   display: flex;
   flex-direction: column;
@@ -730,15 +734,6 @@ section, main, footer, header, article {
   font-weight: 400;
   line-height: 2.6rem;
   margin: 0;
-}
-
-.layout-2-column-us {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.layout-2-column-us > * {
-  flex-basis: 44%;
 }
 
 .contact-us__mail,
@@ -872,7 +867,57 @@ section, main, footer, header, article {
 }
 
 .about-us {
-  padding-top: 66px;
+  padding: 30px 0 100px;
+}
+
+.employee-container {
+  padding-right: 32px;
+}
+
+.about-us__description {
+  margin: 0 0 45px;
+}
+
+.employee {
+  display: flex;
+  position: relative;
+  padding: 35px;
+  width: calc(30% - 32px);
+}
+
+.employee__photo {
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  top: 20px;
+  right: -32px;
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
+}
+
+.employee__name {
+  margin: 0;
+}
+
+.employee__title {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.employee__contact {
+  color: #1943EF;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 0;
+  text-decoration: none;
+}
+.employee__contact:hover {
+  text-decoration: underline;
 }
 
 .footer {

@@ -29,6 +29,15 @@
     }
 }
 
+//двигает текст в контейнере с contact-us__text 
+// .layout-2-column-us {
+//     @include columns($width: 44%)
+// }
+
+.contact-us__text {
+    max-width: 520px;
+}
+
 .contact-us__content {
     display: flex;
     flex-direction: column;
@@ -42,9 +51,6 @@
     }
 }
 
-.layout-2-column-us {
-    @include columns($width: 44%)
-}
 
 .contact-us__mail,
 .contact-us__phone {
