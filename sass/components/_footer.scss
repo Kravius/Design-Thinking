@@ -1,0 +1,47 @@
+// .footer {
+// 	padding: 79px 0 72px;
+// }
+.footer {
+	padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+	display: flex;
+}
+
+.logo {}
+
+.footer-navigation {
+	flex-grow: 1;
+	padding-left: 152px;
+}
+
+.layout-3-column {}
+
+.footer-navigation__column {}
+
+.footer-navigation__title {
+	margin: 0 0 15px;
+	color: $color-heading;
+	@extend %font-prim;
+	@include font ($size: 2rem, $weight: 600, $height: 3rem);
+}
+
+.footer-navigation__links {
+	@extend %font-add;
+
+	a {
+		color: $color-text;
+		text-decoration: none;
+		@extend %transition;
+		@include font ($size: 1.6rem, $weight: 400, $height: 3.5rem);
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+.logo__footer {
+	margin-top: 0;
+}

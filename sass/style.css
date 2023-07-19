@@ -1,13 +1,13 @@
-.navigation__link, .logo-path {
+.footer-navigation__links a, .navigation__link, .logo-path {
   transition: all 0.3s ease-in-out;
 }
 
-.strategies__title, .contact-us__mail,
+.footer-navigation__title, .strategies__title, .contact-us__mail,
 .contact-us__phone, .contact-us__content > p, .tag, body {
   font-family: "Open Sans", Verdana, sans-serif;
 }
 
-.promo__text, .link-button, h1 {
+.footer-navigation__links, .promo__text, .link-button, h1 {
   font-family: "Poppins", Verdana, sans-serif;
 }
 
@@ -873,4 +873,42 @@ section, main, footer, header, article {
 
 .about-us {
   padding-top: 66px;
+}
+
+.footer {
+  padding: 60px 0 70px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer-navigation {
+  flex-grow: 1;
+  padding-left: 152px;
+}
+
+.footer-navigation__title {
+  margin: 0 0 15px;
+  color: #2F281E;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+.footer-navigation__links a {
+  color: #544837;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+}
+.footer-navigation__links a:hover {
+  color: #FF9900;
+}
+
+.logo__footer {
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */
