@@ -1,0 +1,65 @@
+.tools__wrapper {
+	padding-bottom: 90px;
+	background-image: url(../img/backgrounds/tools-bg.svg);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: 100%;
+}
+
+.tools__title {
+	max-width: 462px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+.tool__title {
+	color: #2F281E;
+	font-family: Open Sans;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.tools__button {
+	margin-top: 60px;
+	text-align: center;
+}
+
+.button {}
+
+.button_colored {}
+
+//tool block
+
+.tool-conteiner {
+	@include media-tablet {
+		flex-wrap: wrap;
+		row-gap: 54px;
+		margin-right: 40px;
+		>.tool {
+			flex-basis: 42%;
+		}
+		@include media-mobile {
+			>.tool{
+				flex-basis: 100%;
+				row-gap: 47px;
+			}
+		}
+	}
+}
+
+.tool {
+	@include media-tablet {
+		text-align: center;
+	}
+}
+
+.tool__icon {
+	margin-bottom: 30px;
+}
+
+.tool__title {
+	margin: 0 0 16px;
+}

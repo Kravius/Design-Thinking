@@ -1,0 +1,21 @@
+.layout-4-column {
+	@include columns($width: 21%)
+}
+
+.layout-3-column {
+	@include columns($width: 30%);
+
+	//добавляем один елемент который имеет высоту по высоте другого контента
+	//а ширину занимает 30 как и все елементы, если в ряду не достаточно елементов
+	//он появляеться и благодаря миксинам columns justify-content: space-between;
+	// контент распределяеться, если есть 3 елемента он просто имеет высоту 0 и не видиться на экране
+	&:after {
+		content: '';
+		width: 30%;
+		display: block;
+	}
+}
+
+.layout-2-column {
+	@include columns($width: 48%)
+}

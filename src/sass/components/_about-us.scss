@@ -1,0 +1,66 @@
+//move img absolute
+$image-gap: 32px;
+
+//поделили 96-30  отступ с компонентами strategies
+.about-us {
+	// padding-top: 66px;
+	padding: 30px 0 100px;
+}
+
+
+.employee-container {
+	padding-right: $image-gap;
+	@include media-mobile {
+		// flex-direction: column;
+	}
+}
+
+.about-us__description {
+	margin: 0 0 45px;
+}
+
+.employee {
+	display: flex;
+	position: relative;
+	padding: 35px;
+	width: calc(30% - $image-gap);
+}
+
+.employee__photo {
+	position: absolute;
+	width: 98px;
+	height: 98px;
+	border-radius: 50%;
+	top: 20px;
+	right: -$image-gap;
+	filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
+}
+
+.block-shadowed {}
+
+.employee__content {
+	// align-items: center;
+	// justify-content: center;
+}
+
+.employee__name {
+	margin: 0;
+}
+
+.employee__title {
+	@include font($size: 1.4rem, $weight: 400);
+	margin: 0;
+
+
+}
+
+.employee__contact {
+	color: $color-link;
+	@include font($size: 1.4rem, $weight: 400, $height: 2.6rem);
+	margin: 0;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

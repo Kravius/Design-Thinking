@@ -1,0 +1,54 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    @extend %font-prim;
+    @include font ($size: 1.6rem, $height: 2.6rem, $weight: normal)
+}
+
+h1 {
+    @extend %font-add;
+    @include font (4.4rem, 5.4rem);
+
+    @include media-mobile {
+        @include font ($size: 3.2rem, $height: 4.2rem)
+    }
+}
+
+h2 {
+    @include font ($size: 3.4rem, $height: 4.6rem);
+
+    @include media-mobile {
+        @include font ($size: 2.4rem, $height: normal);
+    }
+}
+
+h3 {
+    @include font ($size: 2.4rem, $height: 3.4rem);
+
+    @include media-mobile {
+        @include font ($size: 2.1rem, $height: 3.1rem);
+    }
+}
+
+h4 {
+    @include font ($size: 2.2rem, $height: 3.0rem, $weight: 600);
+
+    @include media-tablet {
+        @include font ($size: 2rem, $height: 3rem, $weight: 600);
+    }
+
+    @include media-mobile {
+        @include font ($size: 1.8rem, $height: 3rem, $weight: 600);
+    }
+}
+
+h5 {
+    @include font ($size: 1.6rem, $height: 2.6rem);
+}
+
+.block-shadowed {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}

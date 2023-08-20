@@ -1,0 +1,22 @@
+.navigation {
+	display: flex;
+	gap: 17px;
+	list-style-type: none;
+	align-items: center;
+	@include font (1.5rem, 2.8rem, $weight: 400);
+}
+
+.navigation__link {
+	cursor: pointer;
+	@extend %transition;
+	&:hover {
+		color: $color-primary;
+	}
+
+}
+
+.header__navigation{
+	@include media-tablet {
+		display: none;
+	}
+}

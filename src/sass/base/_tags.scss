@@ -1,0 +1,37 @@
+.strategies__tags {
+	margin: 0 0 31px;
+	@include media-tablet {
+		justify-content: center;
+	}
+}
+
+.tags {
+	cursor: pointer;
+	display: inline-flex;
+	flex-direction: row;
+	gap: 7px;
+}
+
+.tag {
+	padding: 0 14px;
+	border-radius: 90px;
+	@include font ($size: 1.3rem, $weight: 400, $height: 2.8rem);
+	@extend %font-prim;
+	color: $color-text;
+
+	&_selected {
+		background: $color-primary;
+		color: $color-light;
+		border-color: $color-primary;
+	}
+
+	&_bordered {
+		border: 1px solid $color-border;
+	}
+
+	&_colored {
+		background-color: $color-tag;
+
+	}
+}
+

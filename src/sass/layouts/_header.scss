@@ -1,0 +1,43 @@
+.header {
+    background: $color-light;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 15px 0 17px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-tablet {
+        padding-left: 24px;
+    }
+}
+
+.header__logo-line {
+    display: flex;
+    align-items: center;
+}
+
+// .logo {
+//     margin-top: 22px;
+//     margin-bottom: 24px;
+// }
+
+.header__navigation {}
+
+
+
+.header__buttons {
+    display: flex;
+    gap: 15px;
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.button {}
+
+.button_bordered {}
+
+.button_colored {}

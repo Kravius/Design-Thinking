@@ -1,0 +1,119 @@
+.contact-us {
+    background: $color-background;
+    padding: 62px 0 82px;
+
+    @include media-tablet {
+        text-align: center;
+        padding: 48px 0 50px;
+    }
+}
+
+.contact-us-conteiner {
+    @include media-tablet {
+        flex-direction: column;
+    }
+}
+
+.contact-us__line {
+    margin-bottom: 19px;
+
+    @include media-mobile {
+        margin-bottom: 0;
+        flex-direction: column;
+        >* {
+            margin-bottom: 19px;
+        }
+    }
+}
+
+.contact-us__form {
+
+    input,
+    textarea {
+        border: 1px solid $color-light;
+        border-radius: 5px;
+        background: $color-light;
+        padding: 10px 21px;
+
+        &:focus {
+            border-color: $color-primary;
+            outline: none;
+        }
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 160px;
+    }
+}
+
+// .contact-us__text {
+//     // max-width: 520px;
+
+//     @include media-tablet {
+//         // max-width: 671px;
+//     }
+// }
+
+.contact-us__content {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    >p {
+        color: $color-text;
+        @extend %font-prim;
+        @include font($size: 1.6rem, $weight: 400, $height: 2.6rem);
+        margin: 0;
+    }
+
+    @include media-tablet {
+        gap: 19px;
+        margin-bottom: 54px;
+        max-width: 100%;
+    }
+}
+
+
+.contact-us__mail,
+.contact-us__phone {
+    color: $color-text;
+    @extend %font-prim;
+    @include font ($size: 2.5rem, $weight: 400, $height: 2.6rem);
+    text-decoration: none;
+
+}
+
+
+
+.ico_circle {
+    margin-right: 11px;
+}
+
+.ico_phone {
+    background-image: url("../img/icons/phone.svg");
+    width: 13px;
+    height: 13px;
+
+}
+
+.ico_letter {
+    background-image: url("../img/icons/letter.svg");
+    width: 11px;
+    height: 8px;
+}
+
+.contact-us__button {
+    >* {
+        min-width: 117px;
+    }
+    @include media-mobile {
+        margin-top: 24px;
+    }
+}
+
+.button {}
+
+.button_colored {}
