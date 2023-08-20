@@ -1,7 +1,7 @@
 import { Articale } from './js/Articale.js';
 import { Modal } from './js/Modal.js';
+import { ArticaleModal } from './js/ArticaleModal.js';
 
-console.log(Modal)
 const data = [
 	{
 		id: 1,
@@ -39,6 +39,10 @@ window.onload = function () {
 
 	//Tags
 	addTagsClickHandler();
+
+	//generate base modal from modal class
+	addToolsClickHandler();
+
 }
 const addTagsClickHandler = () => {
 	document.querySelector('.strategies__tags').addEventListener('click', (e) => {
@@ -94,6 +98,9 @@ const renderArticlesToDom = () => {
 	generationArticles(data).forEach(article => {
 		strategiesWrapper.append(article.generatorArticle());
 	})
+
+	addStrategyClickHandler();
+
 }
 
 const getStrategisWrapper = () => {
@@ -112,6 +119,38 @@ const generationArticles = (data) => {
 	return articles;
 }
 
-// const generationArticle = () => {
+const addToolsClickHandler = () => {
+	document.querySelector('.tools__button .button').addEventListener('click', () => {
+		genarateToolsModal();
+	})
+}
 
-// }
+const genarateToolsModal = () => {
+	renderModalWindow('test conten for Tools Modal')
+}
+
+const renderModalWindow = (content) => {
+	let modal = new Modal('tools-modal');
+	modal.buildModal(content);
+}
+
+const addStrategyClickHandler = () => {
+	document.querySelector('.strategy-wrapper').addEventListener('click', (e) => {
+		if (e.target.closest('.strategy')) {
+
+			let clickedStrategyId = e.target.closest('.strategy').getAttribute('data-id');
+			let clickedStrategyData = getClickedData(clickedStrategyId);
+			// console.log(clickedStrategyData)
+			renderArticleModalWindow(clickedStrategyData);
+		}
+	})
+}
+
+const getClickedData = (id)=> {
+	 return data.find(article => article.id == id)
+}
+
+const renderArticleModalWindow = (article) => {
+	let modal = new ArticaleModal('article-modal', article);
+	modal.renderModal();
+}
